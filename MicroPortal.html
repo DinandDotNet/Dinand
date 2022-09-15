@@ -44,7 +44,8 @@
 							<section class="post">
 								<header class="major">
 									<h1>Micro Portal project</h1>
-									<p>One stop medical portal for a serie of programs to collect and analyse blood results.</p>
+									<p>All-in-one medical portal with a suite of tools for collecting and analyzing blood results.<br/>
+										One point of contact for healthcare providers to push, analyze and receive results from a reliable service.</p>
 								</header>
 								<div class="image main"><img style="width:28%" src="images/MicroLab.jpg" alt="" /></div>
 								<p><h5>Handsome</h5>
@@ -74,14 +75,17 @@
                             <section>
                                 <h5>Architecture</h5>
 
-                                <p>The application runs on seperate hosted servers on diferent place on the internet.
-                                    By creating a read service for reading out the storage, and a seperated write service to write to the storage we maximium spread the networkload.
-                                    Primairly connected to a security service all communication is besides standard secured (like ssl, and default security protocols), also custom secured with uniek codes that are only known by the sender and receiver.
-                                    An OAuth2 user security covers the front security. While this security on the back communicates whit a unique pair of keys, it protects hacking from the inside to other careprovicer results.
-                                    
-                                    By holding all used plugin and technologies on a basic level, it prevents trouble after upgrading. Therefore any extensions are build outside the standard modules, and tell the log seperate there problem for trouble shooting. 
-                                    
-                                </p>
+                                <p>The application runs on separate hosted servers in different places on the internet.<br/>
+									This bullet list is an overview of the decisions made within the project.</p>
+									<ul>
+										<li>By creating a read service to read from the storage, and a separate write service to write to the storage, we spread the network load as much as possible.</li>
+										<li>Primarily connected to a security service, all communication is secured by default (such as SSL and standard security protocols) and whitelisting, as well as custom secured with unique codes that are only known to the sender and receiver</li>
+										<li>An OAuth2 user security covers the front-end security. While this security at the back communicates with a unique key pair every time, it protects hacking from within to other caregivers.</li>
+										<li>By keeping all plugins and technologies used at a basic level, it prevents problems after upgrading. Therefore, any extensions are built outside of the default modules, and the log tells their problem for troubleshooting.</li>
+										<li>Modular/microservice usage prevents complex codestrokes in a large app. Takes less effort for maintenance. Can easily switch to external or internal services.</li>
+		                                <li>All applications are written in .net 6 or newer, and will be upgraded to any new LTS version.</li>
+										<li>The services are redundantly distributed over multiple overload hosts with an uptime of more than 99%. The risk of failure is kept to the absolute minimum.</li>
+									</ul>
                             </section>
 
 					</div>
