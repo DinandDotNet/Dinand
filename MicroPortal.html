@@ -69,9 +69,20 @@
                                     
                                     <h5>Z-Analyse</h5>
                                     This system analyzes the history of the data to create a logical timeline by displaying the fluctuations.
-                                    This can be on one or more records to produce information for imaging of medical personnel, sales, methods used, etc.
-</p>
+                                    This can be on one or more records to produce information for imaging of medical personnel, sales, methods used, etc.</p>
 							</section>
+                            <section>
+                                <h5>Architecture</h5>
+
+                                <p>The application runs on seperate hosted servers on diferent place on the internet.
+                                    By creating a read service for reading out the storage, and a seperated write service to write to the storage we maximium spread the networkload.
+                                    Primairly connected to a security service all communication is besides standard secured (like ssl, and default security protocols), also custom secured with uniek codes that are only known by the sender and receiver.
+                                    An OAuth2 user security covers the front security. While this security on the back communicates whit a unique pair of keys, it protects hacking from the inside to other careprovicer results.
+                                    
+                                    By holding all used plugin and technologies on a basic level, it prevents trouble after upgrading. Therefore any extensions are build outside the standard modules, and tell the log seperate there problem for trouble shooting. 
+                                    
+                                </p>
+                            </section>
 
 					</div>
 
