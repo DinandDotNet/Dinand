@@ -70,7 +70,16 @@
                                     
                                     <h5>Z-Analyse</h5>
                                     This system analyzes the history of the data to create a logical timeline by displaying the fluctuations.
-                                    This can be on one or more records to produce information for imaging of medical personnel, sales, methods used, etc.</p>
+                                    This can be on one or more records to produce information for imaging of medical personnel, sales, methods used, etc.
+
+									<h5>Log service</h5>
+									Single logservice for logging all messages on any application to save for over 5 years of data. 
+									Not allowed is any personal data, only reference codes. 
+									Every x (configurable amount) days the rules will be archived to a seperate big data archive. 
+									It keeps the service up to speed.
+									Servicedesk will be able to access the data pro user.
+									System analist will be reported on multiple simulair issues, and can view all log data.
+								</p>
 							</section>
                             <section>
                                 <h5>Architecture</h5>
@@ -85,6 +94,7 @@
 										<li>Modular/microservice usage prevents complex codestrokes in a large app. Takes less effort for maintenance. Can easily switch to external or internal services.</li>
 		                                <li>All applications are written in .net 6 or newer, and will be upgraded to any new LTS version.</li>
 										<li>The services are redundantly distributed over multiple overload hosts with an uptime of more than 99%. The risk of failure is kept to the absolute minimum.</li>
+										<li>We create a central log service with tenants and tags for the use of the servicedesk. This service must use the default .net log routine.</li>
 									</ul>
                             </section>
 
