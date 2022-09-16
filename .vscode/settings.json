@@ -1,5 +1,6 @@
 {
     "debug.allowBreakpointsEverywhere": true,
     "git.postCommitCommand": "sync",
-    "git.useEditorAsCommitInput": false
+    "git.useEditorAsCommitInput": true,
+    "git.verboseCommit": true
 }
