@@ -1,0 +1,52 @@
+<ul class="links menu">
+    <li><a href="index.html">This is Dinand's portfolio</a></li>
+    <li><a href="Dinand.html">Dinand</a></li>
+    <li><a href="barmate.html">Barmate project</a></li>
+    <li><a href="MicroPortal.html">Micro Portal</a></li>
+    <!-- <li><a href="elements.html">Elements Reference</a></li> -->
+</ul>
+<ul class="icons">
+    <li><a target="_blank" href="mailto:dinand.dotnet@gmail.com" class="fas fa-envelope"><span class="label"></span></a></li>
+    <li><a target="_blank" href="https://www.linkedin.com/in/dinand-v-50b72722b/" class="fas icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+    <li><a target="_blank" href="https://dinanddotnet.github.io/Dinand/index.html" class="fas icon brands fa-github"><span class="label">GitHub</span></a></li>
+    <li><a class="fas" target="_blank" href="https://airtable.com/shr4bkeuciESQk03D" > <img style="width:18px; height:18px" src="images\formedit.jpg"></a></li>
+</ul>
+
+        <style>
+            /* menu bar */
+/* .navbar{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px gray;
+    box-shadow: 2px 2px 35px 2px #8a8a1d;
+    padding:12px 28px;
+    font-weight: 700;
+    font-size: larger;
+    align-items: center;
+    letter-spacing: 3px;
+}
+.navbar i{
+    color:#8a8a1d;
+}
+.navbar .menu, .navbar .login-menu{
+display: flex;
+}
+.navbar ul{
+    list-style: none;
+}
+
+.navbar .menu a, .navbar .login-menu li{
+  margin-right:38px;
+  text-decoration: none;  
+  color:rgb(75, 75, 44)
+} */
+ </style>
+ <script>
+     const li = document.querySelectorAll('.menu li')[0]
+     li.addEventListener('click', (e)=>{
+         e.preventDefault()
+         alert('Home Clicked')
+         window.location.href='/index.html'
+     })
+ </script>
