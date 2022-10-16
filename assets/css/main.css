@@ -3310,7 +3310,7 @@ input, select, textarea {
 		-moz-justify-content: -moz-flex-end;
 		-webkit-justify-content: -webkit-flex-end;
 		-ms-justify-content: -ms-flex-end;
-		justify-content: flex-end;
+		justify-content: flex-start;
 		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
@@ -3319,7 +3319,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+		/* min-height: 100vh; */
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -4546,7 +4546,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#navPanelToggle {
-				display: block;
+				/* display: block; */
 			}
 
 		}
