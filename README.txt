@@ -1,3 +1,22 @@
+
+
+
+
+This project is obselete.
+but was based on the theme 
+https://html5up.net/massively
+
+And active for many years. 
+
+Parts of the site are reused in my website
+https://www.secondsoft.nl
+
+Super code, a bit old but nice look and effects.
+Thank you for visiting.
+
+
+--- Org ---
+
 Massively by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
